@@ -6,7 +6,8 @@ Harmonogram projektu:
 
 15.12 - grupa docelowa, wymagania i funkcjonalności strony, makieta low fidelity (low-hi)
 -przedstawione w formie papierowej
--informacje do mankiety:  https://www.eactive.pl/blog-analityka-internetowa-ux/makieta-strony-internetowej-jakprojektowac-wedlug-zasad-ux/
+-informacje do mankiety:
+https://www.eactive.pl/blog-analityka-internetowa-ux/makieta-strony-internetowej-jak-projektowac-wedlug-zasad-ux/
 
 26.01 - prezentacja strony; określenie podziału pracy w grupie (na kartce); podział procentowy; wysłać na maila: kmirek@agh.edu.pl
 
