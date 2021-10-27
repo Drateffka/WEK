@@ -11,6 +11,6 @@ https://www.eactive.pl/blog-analityka-internetowa-ux/makieta-strony-internetowej
 
 26.01 - prezentacja strony; określenie podziału pracy w grupie (na kartce); podział procentowy; wysłać na maila: kmirek@agh.edu.pl
 
-Pomysł:
+Pomysły i konwersacja w sekcji Discussions
 
 
