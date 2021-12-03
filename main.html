@@ -2,10 +2,11 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" type="text/css">
-
+    <sript src="main.js"></sript>
     <title>WEK</title>
 </head>
 <body>
@@ -18,12 +19,11 @@
             </div>
             <div id="nav">
                 <div id="social-media">
-                    <ul class="social-media">
-                        Zobacz jak działamy!
-                    <a href = "https://www.agh.edu.pl/"><img src="Images/mes.png"></a>
-                    <a href = "https://www.agh.edu.pl/"><img src="Images/facebook.png"></a>
-                    <a href = "https://www.agh.edu.pl/"><img src="Images/insta.png"></a>
-                    </ul>
+
+                        <a href= "https://www.agh.edu.pl/" class="social-media"><img src="Images/mes.png"></a>
+                        <a href= "https://www.agh.edu.pl/" class="social-media"><img src="Images/facebook.png"></a>
+                        <a href= "https://www.agh.edu.pl/" class="social-media"><img src="Images/insta.png"></a>
+        
                 </div>
                 <div id="navbar">
                     
@@ -51,8 +51,8 @@
                 </div>
             </div>
             <div id="contact">
-            <button name="contact" type="submit" id="con-butt">Kontakt</button>
-            <button name="shop" type="submit" id="shop-butt">Sklep</button>
+                <button name="contact" type="submit" class="con-butt">Kontakt</button>
+                <button name="shop" type="submit" class="con-butt">Sklep</button>
             </div>
 
         </div>
@@ -80,5 +80,52 @@
    
     </section>
 
+    <div class="slide-container">
+        <div class="mySlides">
+            <img src="./slideImages/zd1.jpg" height="700px" alt="">
+         </div>
+        <div class="mySlides">
+            <img src="./slideImages/zd2.jpg" height="700px" alt="">
+        </div>
+        <div class="mySlides">
+            <img src="./slideImages/zd3.jpg" height="700px" alt="">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <p id="feedText">Aktualnoci</p>
+
+    <a href=""><div class="feed">
+        <div class="feedColumn1">
+            <img src="./Images/einstein.jpg" alt="">
+        </div>
+        <div class="feedColumn2">
+            <h2>WEK pomaga studentom w walce ze Zdzisławem Onderką</h2><br>
+            14 lutego br. ratownicy WEK rozpoczęli ostateczną walkę z PhD podczas <br>
+            trzeciego terminu egzaminu z WDI. Dzielni studenci IiAD nie poddali sie <br>
+            i dali radę zwyciężyć.
+        </div>
+    </div></a>
+
+    <a href=""><div class="feed">
+        <div class="feedColumn2">
+            
+            <h2>WEK wspomaga w wyznaczeniu terminu następnych zajęć z Linux'a</h2><br>
+            Podczas grudniowych zmian ćwiczeniowców na kierunku IiAD, studenci <br>
+            za pośrednictwem swojej "kurowej" próbują ustalić nowy termin zajęć. <br>
+
+        </div>
+        <div class="feedColumn1">
+            <img src="./Images/oleksik.jpg" alt="">
+        </div>
+        
+    </div></a>
+
+
+    
+    <script src="main.js">
+ 
+    </script>
 </body>
 </html>
