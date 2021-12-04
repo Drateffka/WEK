@@ -176,6 +176,8 @@ header{
     padding-left: 20px;
     height: 50%;
 }
+section { background: green; width:30%; height: 100px; float: left; }
+aside { background: orange; width:70%; height: 100px; float: right; }
 
 
 .menu4 #menu {
