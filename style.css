@@ -22,7 +22,7 @@ header{
 
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    background-color: #909f91;
+    background-color: rgb(64,191,142);
     padding: 20px;
     height: 172px;
 }
@@ -30,7 +30,7 @@ header{
 #symbol{
     position: relative;
     transition: 0.6s;
-
+    background-color: brown;
     grid-column: 1 / 2;
    
 }
@@ -68,7 +68,7 @@ header{
     font-weight: 600;
 }
 .con-butt:hover{
-    background-color: gray;
+    background-color: rgb(64, 150, 142);
     color: #ffffff;
     border-bottom: 2px solid #319598;
 }
