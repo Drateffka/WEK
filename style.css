@@ -14,7 +14,6 @@ a{
     text-decoration: none;
 }
 header{
-    display:flex;
     position: fixed;
     transition: 0.6s;
     z-index: 100000;
@@ -23,9 +22,9 @@ header{
 
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    
+    background-color: #909f91;
     padding: 20px;
-    height: 150px;
+    height: 172px;
 }
 
 #symbol{
