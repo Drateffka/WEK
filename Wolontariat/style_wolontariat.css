@@ -1,7 +1,9 @@
+h*{
+    box-sizing: border-box;
+}
 body{
-    background-color:rgb(252, 249, 229);
     margin: 0;
-    padding: 0px;
+    padding: 0;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
 }
@@ -9,35 +11,92 @@ a{
     text-decoration: none;
 }
 header{
+    position: fixed;
+    transition: 0.6s;
+    z-index: 100000;
+
+    width: 100%;
+    box-shadow:1px 3px 2px gray;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    background-color: rgba(128, 145, 116, 0.692);
+    padding: 20px;
+    height: 130px;
+
+/*
     padding: 10px 40px 20px 40px;
-    background-color: white;
+    
     width: 1300px;
     margin-left: 110px;
     margin: 0 auto;
+    */
 }
-#nav-bar{
-    height: 150px;
-    background-color: white;
-}
+
 #symbol{
-    float: left;
-    width: 10%;
+    position: relative;
+    transition: 0.6s;
+    grid-column: 1 / 2;
+   
+}
+#symbol a{
+    margin-top: 50px;
 }
 #nav{
-    float:left; /**/
-    width: 80%;
+    position:relative;
+    transition: 0.6s;
+
+    grid-column: 2 / 8;
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    
 }
+#contact{
+    position: relative;
+    transition: 0.6s;
+
+    grid-column: 8 / -1;
+    padding: 30px;
+}
+.con-butt{
+    text-decoration: none;
+    text-align: center;
+    margin-bottom:10px;
+    color: #1b0501;
+    border: 2px solid #052201;
+    border-radius: 4px;
+    width: 100px;
+    line-height: 40px;
+    display: inline-block;
+    font-family: Arial;
+    font-weight: 600;
+}
+.con-butt:hover{
+    background-color: rgb(64, 150, 142);
+    color: #ffffff;
+    border-bottom: 2px solid #319598;
+}
+
+
 #social-media{
+    position: relative;
+    transition: 0.6s;
     margin-top:5px;
     height: 50px;
     font-size:smaller;
-    text-align:right;
+    text-align:center;
+    grid-column: 3 / 5;
+    grid-row: 1/2;
 }
+
 #navbar{
+    position: relative;
+    transition: 0.6s;
+    grid-row: 2 / 3;
+    grid-column: 1 / 7;
     height: 50px;
     font-weight: 900;
     font-size:25px;
-    
 }
 .menu{
     list-style: none;
@@ -62,46 +121,197 @@ header{
     color: white;
     border-radius: 50%;
 }
-.social-media a{
+.social-media{
+    text-align: center;
     padding:12px;
     text-decoration: none;
-    transition-duration: 1.2s;
-    
+    transition-duration: 0.6s;
 }
-.social-media a:hover{
-    background-color: green;
+
+.social-media:hover{
+    background-color: #9aacff;
     color: white;
     border-radius: 50%;
-    
 }
 
-.naglowek{
-    padding-top:5px;
-    font-size:20px;
-    background-color:lightskyblue;
-    text-align:left;
-    text-justify:distribute;
-    flex:1;
-    transition-duration:0.6s;
-    text-decoration:none;
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 80px;
 }
 
-.introduction{
-    padding:20px;
-    margin:80px;
-    margin-top:10px;
-    margin-bottom:10px;
-    font-size:17px;
+.text-box p{
+    margin: 10px 0 40px; 
+    font-size: 20px;
+    color:#fff;    
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor:pointer;
+    transition:0.6s;
+}
+
+.hero-btn:hover{
+    border: 1px solid rgba(128, 145, 116, 0.692);
+    background: rgba(128, 145, 116, 0.692);
+    transition: 1.0s;
+}
+section{
+    scroll-snap-align: center;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,39,0.7)), url(../Images/agh.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .text-box p{
+        font-size:15px;
+    }
+
+}
+
+.section2{
+    width:80%;
+    margin:auto;
     text-align:center;
-    text-justify:distribute;
-    text-decoration:none;
-    background-color:rgb(197, 233, 238);
+    padding-top:50px;
+}
+h1{
+    font-size:36px;
+}
+p{
+    font-size:20px;
+}
+.row{
+    margin-top:5%;
+    display:flex;
+    justify-content:space-between;
 }
 
-.baner{
-    background-color:lightskyblue;
-    margin-right:80px;
-    margin-left:80px;
-    padding:10px;
-    flex:1;
+.column-up{
+    flex-basis:100%;
+    background:rgb(64, 150, 142);
+    border-radius:10px;
+    margin-bottom:5%;
+    padding:20px 12px;
+    box-sizing:border-box;
+    transition:0.6s;
+}
+
+.column-up:hover{
+    box-shadow:0px 0px 15px 0px black;
+}
+
+.column-down{
+    flex-basis:24%;
+    background:rgba(64, 150, 141, 0.6);
+    border-radius:10px;
+    margin-bottom:5%;
+    padding:20px 12px;
+    box-sizing:border-box;
+    transition:0.6s;
+}
+
+.column-down:hover{
+    box-shadow:0px 0px 15px 0px black;
+}
+
+.column-3{
+    flex-basis:100%;
+    background:rgb(64, 150, 142);
+    border-radius:10px;
+    margin-bottom:5%;
+    padding:20px 12px;
+    box-sizing:border-box;
+    transition:0.6s;
+}
+
+.column-3:hover{
+    box-shadow:0px 0px 15px 0px black;
+    background:rgba(4,9,30,0.7);
+}
+
+footer{
+    height: 300px;
+    background-color: #221216;
+    color:white;
+}
+
+
+.row a {
+    color:black;
+    width:99%;
+    align-self:center;
+}
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+.column-photos{
+    flex-basis:33%;
+    height:60%;
+    border-radius:30px;
+    margin-bottom:30px;
+    position:relative;
+    overflow:hidden;
+}
+
+.column-photos img{
+    width:100%;
+    display:block;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.6s;
+}
+
+.layer:hover{
+    background: rgba(4,9,30,0.7);
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left:50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.6s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
 }
