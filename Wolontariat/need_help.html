@@ -5,65 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style_need_help.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="help.png" type="image/png">
-    <title>Pomóż mi</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <title>Pomoc</title>
 </head>
 <body>
+ <section class="header">
     <header>
-        <div id="nav-bar">
-            <div id="symbol">
-                <a href="main.html">
-                <img src="help.png"></img>
-                </a>
-            </div>
-            <div id="nav">
-                <div id="social-media">
-                    <ul class="social-media">
-                        Zobacz jak działamy!
-                    <a href = "https://www.agh.edu.pl/"><img src="mes.png"></a>
-                    <a href = "https://www.agh.edu.pl/"><img src="facebook.png"></a>
-                    <a href = "https://www.agh.edu.pl/"><img src="insta.png"></a>
-                    </ul>
-                </div>
-                <div id="navbar">
-                    
-                    <ul class="menu">
-                        <li class="menu-item">
-                            <a href="#">O nas</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">Aktualności</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="wolontariat.html">Wolontariat</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">Pomoc</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">Bezpieczeństwo</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">Wspieraj nas</a>
-                        </li>
-                    </ul>
-            
-                </div>
-            </div>
-
+        <div id="symbol">
+            <a href="../main.html">
+            <img src="../Images/logo.png"></img>
+            </a>
         </div>
-    </header>
-<article>
-    <div class="intro">
-        <h2>Depresja, Poczucie samotności, Rezygnacja</h2>
-        <h3>To tylko niektóre problemy z którymi mierzą się studenci, szczególnie po powrocie ze zdalnego nauczania</h3>
-        <h2>A gdyby ktoś mógł Ci pomóc?</h2>
-        <h3>Jeśli potrzebujesz pomocy z nauką, "ogarnięciem" wszystkiego, czy porady psychologicznej napisz już teraz!</h3>
-        <p>Wypełnij poniższy formularz (nie zapominając o danych kontaktowych!) a na pewno ktoś z naszych wolontariuszy skontaktuje się z tobą</p>
-    </div>
+        <div id="nav">
+            <div id="social-media">
+
+                    <a href= "https://www.agh.edu.pl/" class="social-media"><img src="../Images/mes.png"></a>
+                    <a href= "https://www.agh.edu.pl/" class="social-media"><img src="../Images/facebook.png"></a>
+                    <a href= "https://www.agh.edu.pl/" class="social-media"><img src="../Images/insta.png"></a>
     
-</article>
-<div class="formul">
+            </div>
+            <div id="navbar">
+                
+               <ul class="menu">
+                    <li class="menu-item">
+                        <a href="#">O nas</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Aktualności</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="wolontariat.html">Wolontariat</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Pomoc</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="../Bezpieczenstwo/Security_2.html">Bezpieczeństwo</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Wspieraj nas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="contact">
+            <button name="contact" type="submit" class="con-butt">Kontakt</button>
+            <button name="shop" type="submit" class="con-butt">Sklep</button>
+        </div>
+</header>
+<div style="height: 172px;"></div>
+<div class="text-box">
+    <h1>Pomoc</h1>
+    <p>
+        Każdy z nas ma czasami pewne problemy. <br>Nauka, brak czasu, poczucie samotności, depresja.<br>
+        Jeśli zmagasz się z którąś z tych rzeczy, nie bój się prosić o pomoc!<br> Nawet jeśli się wstydzisz,
+        zawsze możesz napisać do nas anonimowo. <br>Wypełnij formularz, a my postaramy Ci się pomóc
+    </p>
+    <a href="#sectionlink" class="hero-btn">Wypełnij formularz</a>
+</div>
+</section>
+
+<div style="height: 120px;" id="sectionlink"></div>
+<section class="section2">
     <h4>Jak możemy Ci pomóc? Możesz zaznaczyć kilka pól:</h4>
     <form>
         <input type="checkbox" name="help_1">
@@ -80,6 +83,7 @@
         <input type="text">
     </form>
     <h4>Wybierz wydział na którym studiujesz (to pomoże nam skontaktować Cię z osobami z Twojego wydziału):</h4>
+    <div class="row">
     <form>
         <input type="radio" name="w" id="w1">
         <label for="w">Wydział Inżynierii Lądowej i Gospodarki Zasobami</label><br>
@@ -114,15 +118,22 @@
         <input type="radio" name="w" id="w16">
         <label for="w16">Akademickie Centrum Materiałów i Nanotechnologii</label><br>
     </form>
+</div>
     <h4>Jeśli chciałbyś nam coś jeszcze powiedzieć, napisz to poniżej:</h4>
     <textarea id="other"  rows="4" cols="100"></textarea>
-    <h4>Wpisz prosze swój email, tak abyśmy mogli się z tobą skontaktować:</h4>
+    <h4>Wpisz swój email, tak, abyśmy mogli się z tobą skontaktować:</h4>
     <form>
         <input type="email"><br><br>
     </form>
     <form>
+        <!-- tutaj dodac JS co sie dzieje po kliknieciu!-->
         <input type="submit" value="Wyślij" id="submit_button">
     </form>
-</div>
+</section>
+<div style="height: 172px;"></div>
+<footer>
+    <p>Tekst na stopce</p>
+    <p>tu będzie kontakt i mapka dojazdu</p>
+</footer>
 </body>
 </html>
