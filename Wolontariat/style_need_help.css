@@ -1,15 +1,3 @@
-h*{
-    box-sizing: border-box;
-}
-body{
-    margin: 0;
-    padding: 0;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-decoration: none;
-}
-a{
-    text-decoration: none;
-}
 header{
     position: fixed;
     transition: 0.6s;
@@ -22,117 +10,89 @@ header{
     background-color: rgba(128, 145, 116, 0.692);
     padding: 20px;
     height: 130px;
-
-/*
-    padding: 10px 40px 20px 40px;
-    
-    width: 1300px;
-    margin-left: 110px;
-    margin: 0 auto;
-    */
 }
-
-#symbol{
-    position: relative;
-    transition: 0.6s;
-    grid-column: 1 / 2;
-   
-}
-#symbol a{
-    margin-top: 50px;
-}
-#nav{
-    position:relative;
-    transition: 0.6s;
-
-    grid-column: 2 / 8;
-    display:grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    
-}
-#contact{
-    position: relative;
-    transition: 0.6s;
-
-    grid-column: 8 / -1;
-    padding: 30px;
-}
-.con-butt{
-    text-decoration: none;
-    text-align: center;
-    margin-bottom:10px;
-    color: #1b0501;
-    border: 2px solid #052201;
-    border-radius: 4px;
-    width: 100px;
-    line-height: 40px;
-    display: inline-block;
-    font-family: Arial;
-    font-weight: 600;
-}
-.con-butt:hover{
-    background-color: rgb(64, 150, 142);
-    color: #ffffff;
-    border-bottom: 2px solid #319598;
-}
-
-
-#social-media{
-    position: relative;
-    transition: 0.6s;
-    margin-top:5px;
-    height: 50px;
-    font-size:smaller;
-    text-align:center;
-    grid-column: 3 / 5;
-    grid-row: 1/2;
-}
-
-#navbar{
-    position: relative;
-    transition: 0.6s;
-    grid-row: 2 / 3;
-    grid-column: 1 / 7;
-    height: 50px;
-    font-weight: 900;
-    font-size:25px;
-}
-.menu{
-    list-style: none;
+*{
     margin: 0;
     padding: 0;
-    margin-right:90px;
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
+    font-family: 'Flow Block', cursive;
+    font-family: 'Poppins', sans-serif;
 }
-.menu-item{
-    display: inline;
-}
-.menu a{
-    padding:10px;
+a{
     text-decoration: none;
-    color: black;
-    transition-duration: 0.6s;
+
 }
-.menu a:hover{
-    background-color: gray;
-    color: white;
-    border-radius: 50%;
+.container{
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    z-index:99999;
+}
+.navbar{
+    width: 100%;
+    height: 120px;
+    padding-top: 20px;
+    background-color: rgba(128, 145, 116, 0.692);
+
+    position: fixed;
+}
+.symbol{
+    float: left;
+    height: 100%;
+    
+    width: 15%;
+
 }
 .social-media{
+    height: 30px;
+}
+.social-media{
+    padding: 12px;
+}
+.social-media a:first-child{
+    margin-left: 50px; 
+}
+.social-media a{
+    padding-bottom:3px;
+}
+.social-media a:hover{
+    background-color: rgba(100, 86, 93, 0.8);
+    border-radius: 50%;
+   
+}
+.menu{ 
+    height:90px;
+    float:left;
+    width: 85%;
+}
+.menu ul{
+    list-style-type: none;
+}
+.menu ul li{
+    display:inline-block;
+    width: 175px;
+    height: 40px;
     text-align: center;
-    padding:12px;
-    text-decoration: none;
-    transition-duration: 0.6s;
+    padding-top:5px;
+}
+.menu ul li:first-child{
+    width: 130px;
+}
+.menu ul li:last-child{
+    margin-left:10px;
+}
+.menu ul li:hover{
+    border-radius: 45%;
+    background-color: rgba(100, 86, 93, 0.8);
+}
+.menu ul li a{
+    font-size: 20px;
+    color: black;
+    font-weight: 900;
 }
 
-.social-media:hover{
-    background-color: #9aacff;
-    color: white;
-    border-radius: 50%;
-}
 
 .text-box{
     width: 90%;
@@ -176,7 +136,7 @@ section{
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,39,0.7)), url(../Images/agh.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,39,0.7)), url(images/agh.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -200,6 +160,7 @@ section{
     background:rgb(64, 150, 142,0.1);
     border-radius:10px;
     box-shadow:5px 5px 5px 5px gray;
+    line-height:160%;
 }
 
 .row{
@@ -210,8 +171,25 @@ section{
 }
 footer{
     height: 300px;
-    background-color: #221216;
-    color:white;
+    background-color: rgba(4,9,30,0.7);
+}
+.footer1{
+    float:left;
+    height: 200px;
+    width: 26%;
+    padding-left: 50px;
+    padding-top: 30px;
+}
+.footer1 img{
+    padding-left: 90px;
+    padding-top: 50px;
+}
+footer h1{
+    color: white;
+}
+footer p{
+    padding: 5px;
+    font-size: 20px;
 }
 #submit_button{
     width:200px;
