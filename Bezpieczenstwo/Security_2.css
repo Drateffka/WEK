@@ -4,6 +4,11 @@
     font-family: 'Flow Block', cursive;
     font-family: 'Poppins', sans-serif;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     
 }
