@@ -7,6 +7,8 @@
     <link href="style_want_help.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="../Strona główna/Images/logo.png" type="image/png">
     <title>Wolontariat</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="forms.js"></script>
 </head>
 <body>
  <section class="header">
@@ -40,7 +42,7 @@
                         <a href="../Bezpieczenstwo/Security_2.html">Bezpieczeństwo</a>
                     </li>
                     <li>
-                        <a href="#">Wspieraj nas</a>
+                        <a href="../wspieraj/wspieraj.html">Wspieraj nas</a>
                     </li>
                 </ul>
             </div>
@@ -73,11 +75,11 @@
 </div>
     <h4>Wpisz swoje imię i nazwisko</h4>
     <div class="idk">
-    <form id="imiona">
+    <form name="imiona">
         <label for="n1">Imię:</label>
-        <input type="text" id="n1"> <br>
+        <input type="text" id="n1" name="name"> <br>
         <label for="n2">Nazwisko:</label>
-        <input type="text" id="n2"><br><br>
+        <input type="text" id="n2" name="nazwisko"><br><br>
     </form>
 </div>
 
@@ -126,7 +128,7 @@
     <form>
         <input type="email"><br><br>
     </form>
-    <form>
+    <form onsubmit="return valdateform()">
         <input type="submit" value="Wyślij" id="submit_button">
     </form>
 </section>
