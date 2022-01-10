@@ -170,6 +170,8 @@ footer p{
     border-radius: 5px;
     background-color: #f2f2f2de;
     padding: 20px;
+    position:relative;
+    left:100px;
 }
 
 .ramka{
@@ -198,7 +200,7 @@ footer p{
 input[type=text], input[type=email]{
     border: none;
     border-bottom: 2px solid rgb(64, 150, 142);
-    width:10%;
+    width:20%;
     -webkit-transition: width .35s ease-in-out;
     transition: width .35s ease-in-out;
   }
@@ -218,7 +220,7 @@ input[type=text]:focus, input[type=email]:focus{
     background-color:rgb(212, 212, 212);
 font-size:larger;
 
-width:15%;
+width:25%;
 border:none;
 border-bottom:2px solid rgb(64, 150, 142);
   }
@@ -238,4 +240,38 @@ background-color:green;
 
 .niegotowy{
 color:white;
+}
+
+.sidebar{
+    float:left;
+    text-align:left;
+    margin:auto;
+    border-radius: 5px;
+    background-color: #f2f2f2de;
+    padding: 20px;
+    margin-left:70px;
+    padding-right:50px;
+    padding-bottom:50px;
+}
+ul{
+    list-style-type:none;
+    
+}
+.sidebar li a{
+    color:black;
+    font-size:larger;
+    border-bottom:1px solid rgb(64, 150, 142);
+}
+
+.sidebar li{
+    
+    margin-top:20px;
+}
+
+.sidebar .active{
+    border-bottom: 2px solid rgb(64, 150, 142);
+}
+
+#panel2,#panel3,#panel4{
+    display:none;
 }

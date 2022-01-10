@@ -8,4 +8,11 @@ $(document).ready(function(){
     $('.gotowy').click(function(){
         $('#przeslij').text("test");
     });
+    $(".sidebar a").click(function(){
+        $(".wsparcie").hide();
+        $(".sidebar a").removeClass("active");
+        $(this).addClass("active");
+        let text = $(this).attr("href");
+        $(text).show();
+     });
 });
