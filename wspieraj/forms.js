@@ -1,6 +1,11 @@
 $(document).ready(function(){
-    $('#przeslij').click(function(){
+    $('.niegotowy').click(function(){
         $('#ukryta').slideDown();
-        $(this).text("Zapłać przez PayPal");
+        $('#przeslij').text("Zapłać przez PayPal")
+               .removeClass("niegotowy")
+               .addClass("gotowy");
+    });
+    $('.gotowy').click(function(){
+        $('#przeslij').text("test");
     });
 });

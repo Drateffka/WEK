@@ -203,33 +203,35 @@ input[type=submit] {
     cursor: pointer;
   }
  
-input[type="text"]:focus {
-    background-color: rgb(212, 212, 212);
-    border:none;
-    border-radius:0px;
-  }
-  input[type="email"]:focus {
-    background-color: lightblue;
-  }
-  input[type=text] {
+  input[type=text], input[type=email]{
     border: none;
     border-bottom: 2px solid rgb(64, 150, 142);
+    width:20%;
+    -webkit-transition: width .35s ease-in-out;
+    transition: width .35s ease-in-out;
+  }
+
+input[type=text]:focus, input[type=email]:focus{
+    background-color:rgb(212, 212, 212);
+font-size:larger;
+
+width:30%;
+border:none;
+border-bottom:2px solid rgb(64, 150, 142);
   }
 textarea:focus {
-    background-color: lightblue;
+    background-color: rgb(212, 212, 212);
+   
   }
  textarea{
     border: none;
     border-bottom: 2px solid rgb(64, 150, 142);
     resize:none;
     width:80%;
+    -webkit-transition: width .35s ease-in-out;
+    transition: width .35s ease-in-out;
   }
- input[type=email]{
-    
-        border: none;
-        border-bottom: 2px solid rgb(64, 150, 142);
-
-  }
+ 
 #submit_button:hover{
     background-color:rgba(4,9,30,0.7);
     border-color:rgba(4,9,30,0.5);

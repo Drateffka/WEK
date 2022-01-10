@@ -177,6 +177,8 @@ footer p{
     border:2px solid rgba(128, 145, 116, 0.692);
     margin-top:20px;
     padding:20px;
+    line-height:25px;
+   
 }
 
 #przeslij{
@@ -193,9 +195,32 @@ footer p{
     cursor: pointer;
     
 }
-input[type=text], input[type=emailg] {
+input[type=text], input[type=email]{
     border: none;
     border-bottom: 2px solid rgb(64, 150, 142);
+    width:10%;
+    -webkit-transition: width .35s ease-in-out;
+    transition: width .35s ease-in-out;
+  }
+input[type=number]{
+    border: none;
+    border-bottom: 2px solid rgb(64, 150, 142);
+    width:5%;
+    -webkit-transition: width .35s ease-in-out;
+    transition: width .35s ease-in-out;
+  }
+input[type=number]:focus{
+background-color:rgb(212, 212, 212);
+font-size:larger;
+width:10%;
+}
+input[type=text]:focus, input[type=email]:focus{
+    background-color:rgb(212, 212, 212);
+font-size:larger;
+
+width:15%;
+border:none;
+border-bottom:2px solid rgb(64, 150, 142);
   }
 #przeslij:hover{
     background-color:rgba(4,9,30,0.7);
@@ -206,4 +231,11 @@ input[type=text], input[type=emailg] {
 }
 #ukryta{
     display:none;
+}
+.gotowy{
+background-color:green;
+}
+
+.niegotowy{
+color:white;
 }
