@@ -113,6 +113,7 @@ margin: 10px 0 40px;
 font-size: 20px;
 color:#fff;    
 }
+
 .hero-btn{
     display: inline-block;
     text-decoration: none;
@@ -125,10 +126,10 @@ color:#fff;
     cursor: pointer;
     }
     
-.hero-btn:hover{
+a.hero-btn:hover{
 border: 1px solid rgba(128, 145, 116, 0.692);
 background-color: rgba(128, 145, 116, 0.692);
-transition: 1.0s;
+transition:1.0s;
 }
 
 
@@ -172,7 +173,8 @@ footer p{
     background-color: #f2f2f2de;
     padding: 20px;
     position:relative;
-    left:100px;
+    margin-left:10%;
+    clear:both;4
 }
 
 .ramka{
