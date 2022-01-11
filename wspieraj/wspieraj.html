@@ -10,6 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="jquery.color-2.1.2.min.js"></script>
     <script src="forms.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
 <body>
     <section class="header">
@@ -76,7 +77,7 @@
     <p><br>Działania WEK można wspierać wpłacając darowiznę na dowolny cel. Pozyskane od Państwa pieniądze przeznaczamy na lepsze wyszkolenie wolontariuszy, akcje promocyjne i profesjonalną pomoc specjalistów dla naszych podopiecznych.</p>
     <div class="ramka">
         <form name="platnosc">
-            <input type="radio" name="kwota">
+            <input type="radio" name="kwota" checked>
             <label>wpłać 20 zł</label>
             <input type="radio" name="kwota">
             <label>wpłać 50 zł</label>
@@ -87,15 +88,16 @@
         </form>
         <form name="dane" id="ukryta">
             <label>Imię:</label>
-            <input type="text" name="name">
+            <input type="text" name="name" id="name">
             <label>Nazwisko:</label>
-            <input type="text" name="surname">
+            <input type="text" name="surname" id="surname">
             <label>Adres email:</label>
-            <input type="email" name="email">
+            <input type="email" name="email" id="email">
             
         </form>
-       <button id="przeslij" class="niegotowy">Wpłacam</button>
-    
+       <button type="submit" id="first" class="wysylanie">Wpłacam</button>
+       <button type="submit" id="second" class="wysylanie">Zapłać przez Paypal</button>
+        <div id="error"></div>
     </div>
 </div>
 
@@ -122,7 +124,7 @@
             <input type="email" name="email">
             
         </form>
-       <button id="przeslij" class="niegotowy">Wpłacam</button>
+       <button type="submit" id="przeslij" class="niegotowy">Wpłacam</button>
     
     </div>
 </div>

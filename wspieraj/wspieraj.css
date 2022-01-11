@@ -69,6 +69,7 @@ a{
 }
 .menu ul{
     list-style-type: none;
+    display:flex;
 }
 .menu ul li{
     display:inline-block;
@@ -183,7 +184,7 @@ footer p{
    
 }
 
-#przeslij{
+.wysylanie{
     width: 80%;
     background-color: rgb(64, 150, 142);
     color: white;
@@ -224,7 +225,7 @@ width:25%;
 border:none;
 border-bottom:2px solid rgb(64, 150, 142);
   }
-#przeslij:hover{
+.wysylanie:hover{
     background-color:rgba(4,9,30,0.7);
     border-color:rgba(4,9,30,0.5);
 }
@@ -234,12 +235,8 @@ border-bottom:2px solid rgb(64, 150, 142);
 #ukryta{
     display:none;
 }
-.gotowy{
-background-color:green;
-}
-
-.niegotowy{
-color:white;
+#second{
+    display:none;
 }
 
 .sidebar{
@@ -274,4 +271,52 @@ ul{
 
 #panel2,#panel3,#panel4{
     display:none;
+}
+
+@media only screen and (max-width:700px){
+    /*dla kopiujacych: w css w .menu ul trzeba dac display:flex;*/
+    .menu ul{
+       flex-direction:column;
+       width:65%;
+       margin:auto;
+       text-align:left;
+    }
+    .menu ul li:first-child{
+        width: 175px;
+    }
+    .menu ul li:last-child{
+        margin-left:0px;
+    }
+    
+    .navbar{
+        height:320px;
+        text-align:center;
+    }
+    .sidebar{
+        float:none;
+        width:65%;
+        
+    }
+    .social-media{
+        right:0px;
+    }
+    .wsparcie{
+        margin-top:50px;
+        left:0px;
+    }
+    .ramka{
+        width:80%;
+    }
+    input[type=text],input[type=email],input[type=number]{
+        width:50%;
+    }
+    input[type=text]:focus,input[type=email]:focus,input[type=number]:focus{
+        width:50%;
+    }
+}
+
+#error{
+    margin-top:10px;
+    color:red;
+    font-size:larger;
 }
