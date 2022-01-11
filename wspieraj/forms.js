@@ -15,4 +15,15 @@ $(document).ready(function(){
         let text = $(this).attr("href");
         $(text).show();
      });
+     //dlaczego to nie dziala?????
+     $(".hero-btn").hover(function(){
+        $(this).css({
+            border: '1px solid rgba(128, 145, 116, 0.692)',
+            backgroundColor:' rgba(128, 145, 116, 0.692)',
+            transition: '1.0s'
+        });
+
+     },function(){
+        $(this).css("background-color","pink")
+     });
 });
