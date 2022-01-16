@@ -7,69 +7,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" type="text/css">
     <sript src="main.js"></sript>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>WEK</title>
 </head>
 <body>
-    <div class="container">
-        <div class="navbar">    
-            <div class="symbol">
-                <a href="main.html">
-                    <img src="Images/logo.png"></img>
-                </a>
-            </div>
-            <div class="social-media">
-                <a href= "https://www.agh.edu.pl/" class="social-media"><img src="Images/mes.png"></a>
-                <a href= "https://www.agh.edu.pl/" class="social-media"><img src="Images/facebook.png"></a>
-                <a href= "https://www.agh.edu.pl/" class="social-media"><img src="Images/insta.png"></a>
-             </div>
-            <div class="menu">
-                <ul>
-                    <li>
-                        <a href="#">O nas</a>
-                    </li>
-                    <li>
-                        <a href="#">Aktualności</a>
-                    </li>
-                    <li>
-                        <a href="../Wolontariat/wolontariat.html">Wolontariat</a>
-                    </li>
-                    <li>
-                        <a href="#">Pomoc</a>
-                    </li>
-                    <li>
-                        <a href="../Bezpieczenstwo/Security_2.html">Bezpieczeństwo</a>
-                    </li>
-                    <li>
-                        <a href="#">Wspieraj nas</a>
-                    </li>
-                </ul>
-            </div>
-            
-        </div> 
+    <section class="header">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars" id="btn"></i>
+                <i class="fas fa-time" id="cancel"></i>
+            </label>
+            <!--<div id="nav-bar">-->
+                <!--<div id="symbol">-->
+                    <a>
+                        <!--to zdjecie jest w strona glowna/images-->
+                        <img src="image/logo.png"></img>
 
-        
-     
-    </div>
-    
-    
-    
+                    </a>
+                <!--</div>-->
+                    
+                <!--<div id="navbar">-->
 
-   <!-- <div class="slide-container">
-        <div class="mySlides">
-            <img src="Images/zd1.jpg" height="700px" alt="">
-            
-         </div>
-        <div class="mySlides">
-            <img src="./slideImages/zd2.jpg" height="700px" alt="">
+                        <ul class="menu">
+                            <li class="menu-item">
+                                <a href="#">O nas</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Aktualności</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Wolontariat</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Pomoc</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Bezpieczeństwo</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Wspieraj nas</a>
+                            </li>
+                        </ul>
+
+                <!--</div>-->
+
+            <!--</div>-->
+        </nav>
+
+        <div class="text-box">
+            <h1></h1>
+            <p><br>Każdy student ma prawo czuć się beziepczny na własnej uczelni oraz wokół niej!. <br>
+                Kampus AGH ma być miejscem opływającym miodem i ambrozją.<br> Nie damy odebrać sobie głosu.<br>
+                Obalimy Jaguarów i wszystko wróci do normy!!!
+            </p>
+            <a href="#" class="hero-btn">Zobacz co dla Ciebie przygotowaliśmy!!</a>
         </div>
-        <div class="mySlides">
-            <img src="./slideImages/zd3.jpg" height="700px" alt="">
-        </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </section>
+
+
+    <div class="action" onclick="actionToggle()">
+        <span>+</span>
+        <ul class="social-media">
+            <li><a href="#"><img src="image/mes.png">Napisz na Messengerze</li></a>
+            <li><a href="#"><img src="image/facebook.png">Znajdź nas na Facebook'u</li></a>
+            <li><a href="#"><img src="image/insta.png">Znajdź nas na Instagramie</li></a>
+        </ul>
     </div>
--->
-    
+
+
     <div class="what">
         <p>Czym się zajmujemy</p>
         <div class="wContainer">
@@ -102,7 +108,7 @@
 
     <a href=""><div class="feed">
         <div class="feedColumn1">
-            <img src="./Images/einstein.jpg" alt="">
+            <img src="./image/einstein.jpg" alt="">
         </div>
         <div class="feedColumn2">
             <h2>WEK pomaga studentom w walce ze Zdzisławem Onderką</h2><br>
@@ -121,7 +127,7 @@
 
         </div>
         <div class="feedColumn1">
-            <img src="./Images/oleksik.jpg" alt="">
+            <img src="./image/oleksik.jpg" alt="">
         </div>
         
     </div></a>
@@ -139,7 +145,7 @@
             <p>Kraków</p>
         </div>
         <div class="footer1">
-            <img src="logo.png"></img>
+            <img src="image/logo.png"></img>
         </div>
 
 
