@@ -1,63 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Security_2.css" rel="stylesheet" type="text/css">
+    <sript src="main.js"></sript>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Bezpieczenstwo</title>
-    <link rel="stylesheet" href="Security_2.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Flow+Block&family=Poppins:wght@700&display=swap"
-        rel="stylesheet">
 </head>
-
 <body>
     <section class="header">
         <nav>
-            <div id="nav-bar">
-                <div id="symbol">
-                    <a href="../Strona główna/main.html">
-                        <img src="../Strona główna/Images/logo.png"></img>
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars" id="btn"></i>
+                <i class="fas fa-time" id="cancel"></i>
+            </label>
+
+                    <a>
+                        <!--to zdjecie jest w strona glowna/images-->
+                        <img src="../Strona główna/image/logo.png"></img>
+
                     </a>
-                </div>
-                <div id="nav">
-                    <div id="social-media">
-                        <ul class="social-media">
-                            Zobacz jak działamy!
-                            <a href="https://www.agh.edu.pl/"><img src="../Strona główna/Images/mes.png"></a>
-                            <a href="https://www.agh.edu.pl/"><img src="../Strona główna/Images/facebook.png"></a>
-                            <a href="https://www.agh.edu.pl/"><img src="../Strona główna/Images/insta.png"></a>
-                        </ul>
-                    </div>
-                    <div id="navbar">
+
 
                         <ul class="menu">
                             <li class="menu-item">
                                 <a href="#">O nas</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#">Aktualności</a>
+                                <a href="../Strona główna/main.html">Aktualności</a>
                             </li>
                             <li class="menu-item">
                                 <a href="../Wolontariat/wolontariat.html">Wolontariat</a>
                             </li>
                             <li class="menu-item">
-                                <a href="D:\AGH-studia\Semestr 3\HTML\Projekt\WEK3\WEK\Pomoc\pomoc.html">Pomoc</a>
+                                <a href="../Pomoc/pomoc.html">Pomoc</a>
                             </li>
                             <li class="menu-item">
-                                <a href="Security_2.html">Bezpieczeństwo</a>
+                                <a href="#">Bezpieczeństwo</a>
                             </li>
                             <li class="menu-item">
                                 <a href="../wspieraj/wspieraj.html">Wspieraj nas</a>
                             </li>
                         </ul>
 
-                    </div>
-                </div>
-
-            </div>
         </nav>
 
         <div class="text-box">
@@ -69,6 +58,16 @@
             <a href="#section2" class="hero-btn">Zobacz co dla Ciebie przygotowaliśmy!!</a>
         </div>
     </section>
+    <div class="action" onclick="actionToggle()">
+        <span>+</span>
+        <ul class="social-media">
+            <li><a href="https://messenger.com"><img src="../Strona główna/image/mes.png">Napisz na Messengerze</li></a>
+            <li><a href="https://facebook.com"><img src="../Strona główna/image/facebook.png">Znajdź nas na Facebook'u</li></a>
+            <li><a href="https://instagram.com"><img src="../Strona główna/image/insta.png">Znajdź nas na Instagramie</li></a>
+        </ul>
+    </div>
+
+    </section>
 
     <!-----------Course------->
 
@@ -79,41 +78,39 @@
             <div class="row">
                 <div class="course-col">
                     <a href="#kampus" class="linki2"><h3>Kampus AGH</h3></a>
-                    <p>Ratujemy studentów z opresji. W razie nagłęgo zgonu potrafimy udzielić podastawowoej pomocy
-                        medycznej.<br>
-                        W wypadku wielkiego kaca zapewniamy dostep do swiezej wody</p>
+                    <p>Kampus AGH jako największy kampus studencki w Polsce zapewnia wygodne życie i studiowanie każdemu studentowi.
+                        Jest to miejsce wspaniałych wspomnieć oraz przelanych tysięcy hektolitrów piwa!!!<br>
+                        Poczuj to na własnej skórze!</p>
                 </div>
                 <div class="course-col">
                     <a href="#bezpieczny" class="linki2"><h3>Badź BEZPIECZNY!</h3></a>
-                    <p>Ratujemy studentów z opresji. W razie nagłęgo zgonu potrafimy udzielić podastawowoej pomocy
-                        medycznej.<br>
-                        W wypadku wielkiego kaca zapewniamy dostep do swioezej wody</p>
+                    <p>System monitoringu, ochrona miasteczkowa, wspaniali portierzy (pozdrawiam Pana Roberta).<br>
+                        Wszędzie blisko, wszystko jest, wszystko znajdziesz!</p>
                 </div>
                 <div class="course-col">
                     <a href="#rzeczy" class="linki2"><h3>Biuro osób i rzeczy zaginionych</h3></a>
-                    <p>Ratujemy studentów z opresji. W razie nagłęgo zgonu potrafimy udzielić podastawowoej pomocy
-                        medycznej.<br>
-                        W wypadku wielkiego kaca zapewniamy dostep do swioezej wody</p>
+                    <p>Życie jest nieprzewiywalne, możemy zgubić dosłownie wszystkon (nawet kompana na imprezie). Biuro osób i
+                        rzeczy znalezionych przechowuje znaleziska przez dekady!<br>
+                        Przyjdz i odbierz swoje zguby! Zachęcamy !</p>
                 </div>
             </div>
             <div class="row2">
                 <div class="course-col2">
                     <a href="#biuro" class="linki2"><h3>Pierwsza Pomoc Szkolenia</h3></a>
-                    <p>Ratujemy studentów z opresji. W razie nagłęgo zgonu potrafimy udzielić podastawowoej pomocy
-                        medycznej.<br>
-                        W wypadku wielkiego kaca zapewniamy dostep do swioezej wody</p>
+                    <p>Prowadzimy szkolenia z zakresu pierszej pomocy. Szczcególną popularnością cieszy się szkolenie
+                        z zakresu ogarniania osób zgonujących na imprezach. Zachęcamy do uczestnictwa.<br>
+                        Napisz do nas aby uzyskać więcej informacji.</p>
                 </div>
                 <div class="course-col2">
                     <a href="http://rps.agh.edu.pl/" class="linki2"><h3>Rzecznik Praw Studenta</h3></a>
-                    <p>Ratujemy studentów z opresji. W razie nagłęgo zgonu potrafimy udzielić podastawowoej pomocy
-                        medycznej.<br>
-                        W wypadku wielkiego kaca zapewniamy dostep do swioezej wody</p>
+                    <p>Pomoc prawna w wielu przypadkach jest nioceniona. Większość studentów nie jest świaddoma swoich praw.
+                        Walcz studecie o swoje prawa!!!<br>Napisz do nas aby uzyskać więcej informacji.
+                        </p>
                 </div>
                 <div class="course-col2">
                     <a href="#opinie" class="linki2"><h3>Opinie Naszych Podopiecznych</h3></a>
-                    <p>Ratujemy studentów z opresji. W razie nagłęgo zgonu potrafimy udzielić podastawowoej pomocy
-                        medycznej.<br>
-                        W wypadku wielkiego kaca zapewniamy dostep do swioezej wody</p>
+                    <p>Z dnia na dzień staramy się aby udoskonalać ns system wspacia i pomocy studentom. Zachęcamy do składnaia opini!<br>
+                        W razie wszelkiach uwag, skontaktuj się z nami drogą mailową.</p>
                 </div>
             </div>
         </div>
@@ -133,7 +130,7 @@
             <div class="campus-col">
                 <img src="image/kampus.jpg">
                 <div class="layer">
-                    <h3>Kampus AGH!</h3>
+                    <h3>Piękne zachody słońca!</h3>
                 </div>
             </div>
             <div class="campus-col">
@@ -186,7 +183,7 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star"></i>
                 </div>
             </div>
             <div class="testimonial-col">
@@ -224,6 +221,7 @@
                     <input type="submit" class="send" value="Send">
                     <input type="reset" class="send" resetvalue="Reset">
                     </form>
+                
             </div>
             <div class="contact-right">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d640.2432139821487!2d19.90582387714777!3d50.06806999156315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165bbb9d349ee7%3A0x358b507687bc5bc!2sWitolda%20Budryka%203%2C%2030-072%20Krak%C3%B3w!5e0!3m2!1spl!2spl!4v1641941399337!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
