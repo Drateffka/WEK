@@ -497,7 +497,21 @@ input, textarea{
     resize:none;
 }
 
-input[type="submit"]{ /*inna metoda by sie odnosic do bloku/clasy*/
+#tekst{
+    width:60%;
+    padding:8px;
+    margin-bottom: 3px;
+    height: 130px;
+    border-radius: 10px;
+    border: 2px solid rgba(128, 145, 116, 0.692);
+    box-sizing: border-box;
+    resize:none;
+    text-align: justify;
+}
+
+
+
+.send{
     background-color: rgba(128, 145, 116, 0.692);
     color: black;
     font-weight: bold;

@@ -563,6 +563,15 @@ p{
     justify-content: space-between;
 
 }
+
+.row3{
+    margin-top: 2%;
+    width: 50%;
+    justify-content: space-between;
+    margin:0 auto;
+    display:block;
+    padding-bottom: 15px;
+}
 .course-col{
     flex-basis: 31%;
     background: #cebebe;
@@ -743,6 +752,9 @@ h3{
 
 /*kontakt plus mapa*/
 
+.container{
+    padding-top: 150px;
+}
 .contact-sectio h2{
     font-size: 2em;
 }

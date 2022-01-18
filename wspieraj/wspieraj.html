@@ -145,18 +145,17 @@ Adres e-mail: <a href="mailto:promocja@wek.pl" id="email2">promocja@wek.pl</a></
         <div class="contact-left">
             <h2>Kontakt</h2>
 
-            <from action="">
-                <label for="name">Imię/Nick</label>
-                <input type="text" id="name" name="name" placeholder="Imię/nick">
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Email">
-
-                <label for="message">Wiadomo</label>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Pisz śmiało!"></textarea>
-                
-                <input type="submit" class="send-message-cta" value="Wyślij wiadomość">
-            </from>
+            <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+                Imie/Nick:<br>
+                <input type="text" name="name" placeholder="Imię/nick"><br>
+                E-mail:<br>
+                <input type="text" name="mail" placeholder="Email"><br>
+                Wiadomość:<br>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Pisz śmiało!"></textarea><br><br>
+                <!--<input type="text" name="comment" id="tekst" size="150"><br><br>-->
+                <input type="submit" class="send" value="Send">
+                <input type="reset" class="send" resetvalue="Reset">
+                </form>
         </div>
         <div class="contact-right">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d640.2432139821487!2d19.90582387714777!3d50.06806999156315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165bbb9d349ee7%3A0x358b507687bc5bc!2sWitolda%20Budryka%203%2C%2030-072%20Krak%C3%B3w!5e0!3m2!1spl!2spl!4v1641941399337!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
