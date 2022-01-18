@@ -2,69 +2,74 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style_want_help.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="../Strona główna/Images/logo.png" type="image/png">
-    <title>Wolontariat</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="forms.js"></script>
+    <script src="main2.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Pomoc</title>
 </head>
 <body>
- <section class="header">
-    <div class="container">
-        <div class="navbar">    
-            <div class="symbol">
-                <a href="../Strona główna/main.html">
-                    <img src="../Strona główna/Images/logo.png"></img>
-                </a>
-            </div>
-            <div class="social-media">
-                <a href= "https://www.agh.edu.pl/" class="social-media"><img src="../Strona główna/Images/mes.png"></a>
-                <a href= "https://www.agh.edu.pl/" class="social-media"><img src="../Strona główna/Images/facebook.png"></a>
-                <a href= "https://www.agh.edu.pl/" class="social-media"><img src="../Strona główna/Images/insta.png"></a>
-             </div>
-            <div class="menu">
-                <ul>
-                    <li>
-                        <a href="#">O nas</a>
-                    </li>
-                    <li>
-                        <a href="#">Aktualności</a>
-                    </li>
-                    <li>
-                        <a href="wolontariat.html">Wolontariat</a>
-                    </li>
-                    <li>
-                        <a href="#">Pomoc</a>
-                    </li>
-                    <li>
-                        <a href="../Bezpieczenstwo/Security_2.html">Bezpieczeństwo</a>
-                    </li>
-                    <li>
-                        <a href="../wspieraj/wspieraj.html">Wspieraj nas</a>
-                    </li>
-                </ul>
-            </div>
-            
-        </div> 
-    
+    <section class="header">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars" id="btn"></i>
+                <i class="fas fa-time" id="cancel"></i>
+            </label>
+
+                    <a>
+                        <!--to zdjecie jest w strona glowna/images-->
+                        <img src="images/logo.png"></img>
+
+                    </a>
+
+
+                        <ul class="menu">
+                            <li class="menu-item">
+                                <a href="#">O nas</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="../Strona główna/main.html">Aktualności</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="wolontariat.html">Wolontariat</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="../Pomoc/pomoc.html">Pomoc</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="../Wolontariat/wolontariat.html">Bezpieczeństwo</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="../wspieraj/wspieraj.html">Wspieraj nas</a>
+                            </li>
+                        </ul>
+
+        </nav>
+
+        <div class="text-box">
+            <h1>Pomoc</h1>
+            <p> Każdy z nas ma czasami pewne problemy. <br>Nauka, brak czasu, poczucie samotności, depresja.<br>
+                Jeśli zmagasz się z którąś z tych rzeczy, nie bój się prosić o pomoc! <br>Wypełnij formularz, a my postaramy Ci się pomóc ;)
+            </p>
+            <a href="#sectionlink" class="hero-btn">Wypełnij formularz</a>
         </div>
-<div style="height: 172px;"></div>
-<div class="text-box">
-    <h1>Pomoc</h1>
-    <p>
-        Każdy z nas ma czasami pewne problemy. <br>Nauka, brak czasu, poczucie samotności, depresja.<br>
-        Jeśli zmagasz się z którąś z tych rzeczy, nie bój się prosić o pomoc!<br> Nawet jeśli się wstydzisz,
-        zawsze możesz napisać do nas anonimowo. <br>Wypełnij formularz, a my postaramy Ci się pomóc
-    </p>
-    <a href="#sectionlink" class="hero-btn">Wypełnij formularz</a>
-</div>
-</section>
+    </section>
+    <div class="action" onclick="actionToggle()">
+        <span>+</span>
+        <ul class="social-media">
+            <li><a href="https://messenger.com"><img src="../Strona główna/image/mes.png">Napisz na Messengerze</li></a>
+            <li><a href="https://facebook.com"><img src="../Strona główna/image/facebook.png">Znajdź nas na Facebook'u</li></a>
+            <li><a href="https://instagram.com"><img src="../Strona główna/image/insta.png">Znajdź nas na Instagramie</li></a>
+        </ul>
+    </div>
 
 <div style="height: 120px;" id="sectionlink"></div>
 <section class="section2">
-    <h4>Jak możemy Ci pomóc? Możesz zaznaczyć kilka pól:</h4>
+    <h3>Jak możemy Ci pomóc? Możesz zaznaczyć kilka pól:</h3>
     <form>
         <input type="checkbox" name="help_1">
         <label for="help_1">Pomoc psychologiczna</label>
@@ -75,73 +80,52 @@
         <input type="checkbox" name="help_4">
         <label for="help_3">Chciałbym dowiedzieć się więcej o studiowaniu</label>
     </form>
-    <h4><br>Wpisz swoje imię lub pseudonim jeśli wolisz pozostać anonimowy</h4>
+    <br><br>
+    <h3>Wpisz swoje imię lub pseudonim jeśli wolisz pozostać anonimowy</h3>
     <form>
-        <input type="text">
+        <input type="text" id="n1" name="name">
     </form>
-    <h4><br>Wybierz wydział na którym studiujesz (to pomoże nam skontaktować Cię z osobami z Twojego wydziału):</h4>
-    <div class="row">
-    <form>
-        <input type="radio" name="w" id="w1">
-        <label for="w">Wydział Inżynierii Lądowej i Gospodarki Zasobami</label><br>
-        <input type="radio" name="w" id="w2">
-        <label for="w2">Wydział Inżynierii Metali i Informatyki Przemysłowej</label><br>
-        <input type="radio" name="w" id="w3">
-        <label for="w3">Wydział Elektrotechniki, Automatyki, Informatyki i Inżynierii Biomedycznej</label><br>
-        <input type="radio" name="w" id="w4">
-        <label for="w4">Wydział Informatyki, Elektroniki i Telekomunikacji</label><br>
-        <input type="radio" name="w" id="w5">
-        <label for="w5">Wydział Inżynierii Mechanicznej i Robotyki</label><br>
-        <input type="radio" name="w" id="w6">
-        <label for="w6">Wydział Geologii, Geofizyki i Ochrony Środowiska</label><br>
-        <input type="radio" name="w" id="w7">
-        <label for="w7">Wydział Geodezji Górniczej i Inżynierii Środowiska</label><br>
-        <input type="radio" name="w" id="w8">
-        <label for="w8">Wydział Metali Nieżelaznych</label><br>
-        <input type="radio" name="w" id="w9">
-        <label for="w9">Wydział Odlewnictwa</label><br>
-        <input type="radio" name="w" id="w10">
-        <label for="w10">Wydział Wiertnictwa, Nafty i Gazu</label><br>
-        <input type="radio" name="w" id="w11">
-        <label for="w11">Wydział Zarządzania</label><br>
-        <input type="radio" name="w" id="w12">
-        <label for="w12">Wydział Energetyki i Paliw</label><br>
-        <input type="radio" name="w" id="w13">
-        <label for="w13">Wydział Fizyki i Informatyki Stosowanej</label><br>
-        <input type="radio" name="w" id="w14">
-        <label for="w14">Wydział Matematyki Stosowanej</label><br>
-        <input type="radio" name="w" id="w15">
-        <label for="w15">Wydział Humanistyczny</label><br>
-        <input type="radio" name="w" id="w16">
-        <label for="w16">Akademickie Centrum Materiałów i Nanotechnologii</label><br>
+    <h3>Wybierz wydział na którym studiujesz:</h3>
+    
+    <form >
+        <select name="w" id="select">
+            <option value="w1">Wydział Inżynierii Lądowej i Gospodarki Zasobami</option>
+            <option value="w2">Wydział Inżynierii Metali i Informatyki Przemysłowej</option>
+            <option value="w3">Wydział Elektrotechniki, Automatyki, Informatyki i Inżynierii Biomedycznej</option>
+            <option value="w4">Wydział Informatyki, Elektroniki i Telekomunikacji</option>
+            <option value="w5">Wydział Inżynierii Mechanicznej i Robotyki</option>
+            <option value="w6">Wydział Geologii, Geofizyki i Ochrony Środowiska</option>
+            <option value="w7">Wydział Geodezji Górniczej i Inżynierii Środowiska</option>
+            <option value="w8">Wydział Metali Nieżelaznych</option>
+            <option value="w9">Wydział Odlewnictwa</option>
+            <option value="w10">Wydział Wiertnictwa, Nafty i Gazu</option>
+            <option value="w11">Wydział Zarządzania</option>
+            <option value="w12">Wydział Energetyki i Paliw</option>
+            <option value="w13">Wydział Fizyki i Informatyki Stosowanej</option>
+            <option value="w14">Wydział Matematyki Stosowanej</option>
+            <option value="w15">Wydział Humanistyczny</option>
+            <option value="w16">Akademickie Centrum Materiałów i Nanotechnologii</option>
+        </select>
     </form>
-</div>
+<div style="height:20px"></div>
     <h4><br>Jeśli chciałbyś nam coś jeszcze powiedzieć, napisz to poniżej:</h4>
     <textarea id="other"  rows="4" cols="100"></textarea>
     <h4><br>Wpisz swój email, abyśmy mogli się z tobą skontaktować:</h4>
     <form>
-        <input type="email" name="email"><br><br>
+        <input type="email" name="email" id="e1"><br><br>
     </form>
-    <form>
-        <!-- tutaj dodac JS co sie dzieje po kliknieciu!-->
-        <input type="submit" value="Wyślij" id="submit_button">
-    </form>
+    <button type="submit" id="submit_button">Prześlij</button>
+    <div id="error"></div>
 </section>
 <div style="height: 172px;"></div>
-<footer>
-    <div class="footer1">
-        <h1>TWORCY</h1><br>
-        <p>Wojtek</p><br>
-        <p>Ewa</p><br>
-        <p>Kacper</p><br>
+<!--Odtąd kopiowac dla poprawnego dolu!-->
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-right">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d640.2432139821487!2d19.90582387714777!3d50.06806999156315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165bbb9d349ee7%3A0x358b507687bc5bc!2sWitolda%20Budryka%203%2C%2030-072%20Krak%C3%B3w!5e0!3m2!1spl!2spl!4v1641941399337!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
     </div>
-    <div class="footer1">
-        <h1> ADRES </h1>
-        <p>Kraków</p>
-    </div>
-    <div class="footer1">
-        <img src="../Strona główna/Images/logo.png"></img>
-    </div>
-</footer>
+</section>
+
 </body>
 </html>

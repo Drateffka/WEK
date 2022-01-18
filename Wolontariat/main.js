@@ -1,25 +1,12 @@
-$(document).ready(function(){
-    $('#first').click(function(){
-        $('#ukryta').slideDown();
-        $(this).hide();
-        $('#second').show();
-    });
-    $(".sidebar a").click(function(){
-        $(".wsparcie").hide();
-        $(".sidebar a").removeClass("active");
-        $(this).addClass("active");
-        let text = $(this).attr("id");
-        $(text).show();
-     });
-    
+        //form validation
 
-     
-     //form validation
-    $("#second").click(function(){
-    const name=document.getElementById("name");
-     const surname=document.getElementById("surname");
-     const form = document.getElementById("ukryta");
+    
+$(document).ready(function(){
+    $("#submit_button").click(function(){
+    const name=document.getElementById("n1");
+     const surname=document.getElementById("n2");
      const error = document.getElementById("error");
+     const email=document.getElementById("e1")
      let messages=[];
      if (name.value ==='' || name.value==null){
         messages.push("Imię jest wymagane");
@@ -31,12 +18,14 @@ $(document).ready(function(){
      if (email.value ==='' || email.value==null || !(email.value.match(validRegex))){
         messages.push("Zły format adresu email bądź adres email niepodany");
      }
-    error.innerText=messages.join(', ');
-     
-         
+    error.innerText=messages.join(', ');    
     
     });
 });
+
+
+
+
 
 
 
@@ -80,6 +69,3 @@ slide.addEventListener('transitionend', ()=>{
         slide.style.transform = "translateX(" + (-size * counter) + "px)";
     }
 });*/
-
-
-
