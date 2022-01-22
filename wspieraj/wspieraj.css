@@ -44,7 +44,7 @@ nav{ /*nav-bar*/
     
     background-attachment: fixed;*/
     position: fixed;
-    
+    z-index:99999;
 }
 nav a img{
     float: left;
