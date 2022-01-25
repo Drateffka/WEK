@@ -28,8 +28,7 @@ header{
     margin: 0 auto;
     box-shadow:10px 8px 8px gray;
 }
-nav{ /*nav-bar*/
-    /*display: flex;*/
+nav{ 
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 10px;
@@ -38,11 +37,6 @@ nav{ /*nav-bar*/
     width: 100%;
     background-color: rgba(128, 145, 116, 0.692);
     box-shadow:10px 8px 8px gray;
-    /*background-position: center;
-    background-size: cover;*/
-    /*position: relative;
-    
-    background-attachment: fixed;*/
     position: fixed;
 }
 nav a img{
@@ -59,31 +53,13 @@ nav a img{
     background-attachment: fixed;
     z-index:99999;
 }
-/*
-.navbar{
-    width: 100%;
-    height: 120px;
-    padding-top: 20px;
-    background-color: rgba(128, 145, 116, 0.692);
 
-    position: fixed;
-}
-
-.symbol{
-    float: left;
-    height: 100%;
-    
-    width: 15%;
-
-}
-*/
 .menu{
     list-style: none;
     margin: 0;
     padding: 0;
     margin-right:90px;
     justify-content: space-between;
-    /*display: flex;*/
     align-items: center;
 
     height: 50px;
@@ -185,9 +161,7 @@ section{
     transition: 0.3s;
 }
 .action ul li{
-    list-style: none;
-    
-    
+    list-style: none;  
 }
 .action:hover ul{
     opacity: 1;
@@ -218,9 +192,7 @@ section{
 }
 .action a{
     text-decoration: none;
-
 }
-
 
 #btn,
 #cancel{
@@ -250,7 +222,6 @@ section{
     }
     nav a img{
         width:80px;
-        
     }
 }
 @media (max-width: 950px) {
@@ -331,185 +302,6 @@ section{
    background-color: rgba(0,0,0,0.8);
 }
 
-/*
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Flow Block', cursive;
-    font-family: 'Poppins', sans-serif;
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
-body{
-    
-}
-.header{
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,39,0.7)), url(image/agh.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-a{
-    text-decoration: none;
-}
-header{
-    padding: 10px 40px 20px 40px;
-    background-color: rgba(173, 170, 170, 0.692);
-    width: 1300px;
-    margin-left: 110px;
-    margin: 0 auto;
-    box-shadow:10px 8px 8px gray;
-}
-#nav-bar{
-    display: flex;
-    padding: 1.5% 6%;
-    height: 80px;
-    width: 100%;
-    background-color: rgba(128, 145, 116, 0.692);
-    box-shadow:10px 8px 8px gray;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    position: fixed; /* aby tlo menu zostawalo stale 
-    background-attachment: fixed;
-    
-}
-symbol{
-    float: left;
-    width: 150px;
-}
-#nav{
-    float:left; /*
-    width: 80%;
-}
-#social-media{
-    margin-top:5px;
-    height: 50px;
-    font-size: 15px;
-    text-align:right;
-}
-#navbar{
-    height: 50px;
-    font-weight: 900;
-    font-size:25px;
-}
-/*
-.navbar ul li{
-    content: '';
-    width: 100%;
-    height: 2px;
-    background: red;
-    display: block;
-    margin:auto;
-}
-
-.menu{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    margin-right:90px;
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-}
-.menu-item{
-    display: inline;
-}
-.menu a{
-    padding:10px;
-    text-decoration: none;
-    color: black;
-    transition-duration: 0.6s;
-}
-.menu a:hover{
-    background-color: gray;
-    color: white;
-    border-radius: 50%;
-}
-.social-media a{
-    padding:12px;
-    text-decoration: none;
-    transition-duration: 1.2s;
-    
-}
-.social-media a:hover{
-    background-color: green;
-    color: white;
-    border-radius: 50%;
-    
-}
-.text-box{
-    width: 90%;
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-}
-.text-box h1{
-    font-size: 62px;
-}
-
-.text-box p{
-    margin: 10px 0 40px; 
-    font-size: 14px;
-    color:#fff;    
-}
-
-section{
-    scroll-snap-align: center;
-}
-
-.hero-btn{
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 12px 34px;
-    font-size: 13px;
-    background: transparent;
-    position: relative;
-    cursor:pointer;
-
-}
-
-.hero-btn:hover{
-    border: 1px solid #f44336;
-    background: #f44336;
-    transition: 1.0s;
-
-}
-
-@media(max-width: 700px){
-    .text-box h1{
-        font-size: 20px;
-    }
-    /*
-    .menu ul li{
-        display: block;
-    }
-    .menu{
-        position: absolute;
-        background: #c49292;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: 0;
-        text-align: left;
-        z-index: 2;
-
-    }
-    
-}
-*/
-
 /*----- course --*/
 
 .course{
@@ -517,9 +309,6 @@ section{
     margin:auto;
     text-align: center;
     padding-top: 150px;
-    /*overflow-y: scroll;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;*/
 }
 
 .linki2{
@@ -548,7 +337,6 @@ p{
     font-weight: 300;
     line-height: 22px;
     padding:10px;
-
 }
 
 .row{
@@ -561,7 +349,6 @@ p{
     margin-top: 2%;
     display: flex;
     justify-content: space-between;
-
 }
 
 .row3{
@@ -594,7 +381,6 @@ h3{
     text-align: center;
     font-weight: 600;
     margin:10px 0;
-
 }
 .course-col:hover{
     box-shadow: 0px 0px 35px 0px rgba(128, 145, 116, 0.692);
@@ -740,7 +526,7 @@ h3{
     text-align: left;
 }
 .testimonial-col .fa{ 
-    color: #f44336; /*kolor gwiazdek, nwm dlaczego one się nie chcą pojawić */
+    color: #f44336; /*kolor gwiazdek */
 }
 
 @media( max-width: 700px){ /* skalowalnosc opini */
@@ -763,7 +549,6 @@ label{
     display: block;
     font-size: 1.2em;
     margin-bottom: .5em;
-
 }
 
 input, textarea{
@@ -788,8 +573,6 @@ input, textarea{
     text-align: justify;
 }
 
-
-
 .send{
     background-color: rgba(128, 145, 116, 0.692);
     color: black;
@@ -809,5 +592,4 @@ iframe{
 
 .contact-left{
     margin-left:30%;
-    
 }
