@@ -32,8 +32,7 @@ header{
     margin: 0 auto;
     box-shadow:10px 8px 8px gray;
 }
-nav{ /*nav-bar*/
-    /*display: flex;*/
+nav{ 
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 10px;
@@ -42,11 +41,7 @@ nav{ /*nav-bar*/
     width: 100%;
     background-color: rgba(128, 145, 116, 0.692);
     box-shadow:10px 8px 8px gray;
-    /*background-position: center;
-    background-size: cover;*/
-    /*position: relative;
-    
-    background-attachment: fixed;*/
+
     position: fixed;
 }
 nav a img{
@@ -56,18 +51,12 @@ nav a img{
 }
 
 
-/*#navbar{
-    height: 50px;
-    font-weight: 900;
-    font-size:25px;
-}*/
 .menu{
     list-style: none;
     margin: 0;
     padding: 0;
     margin-right:90px;
     justify-content: space-between;
-    /*display: flex;*/
     align-items: center;
 
     height: 50px;
@@ -213,7 +202,6 @@ section{
     float: right;
     line-height: 80px;
     margin-right: 40px;
-    cursor: pointer;
     display: none;
 }
 #check{
@@ -331,34 +319,41 @@ section{
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-columns: 5% 45% 45% 5%;
     grid-template-rows: repet(2, 1fr);
     grid-gap: 10px;
 }
-.w1{
-    background-color: rgb(197, 123, 26);
+#w1{
+    padding: 10px;
+    background: #c49292;
     grid-column: 2/3;
     grid-row: 1/2;
-    border-radius: 10%;
+    border-radius: 10px;
 }
-.w2{
-    background-color: rgb(153, 133, 18);
+#w2{
+    padding: 10px;
+    background: #cebebe;
     grid-column: 3/4;
     grid-row: 1/2;
-    border-radius: 10%;
+    border-radius: 10px;
 }
-.w3{
-    background-color: rgb(126, 97, 3);
+#w3{
+    padding: 10px;
+    background: #cebebe;
     grid-column: 2/3;
     grid-row: 2/3;
-    border-radius: 10%
+    border-radius: 10px;
 }
-.w4{
-    background-color: chocolate;
+#w4{
+    padding: 10px;
+    background: #c49292;
     grid-column: 3/4;
     grid-row: 2/3;
-    border-radius: 10%;
+    border-radius: 10px;
     
+}
+.w:hover{
+    box-shadow: 0px 0px 35px 0px rgba(128, 145, 116, 0.692);
 }
 .what .wContainer p{
     text-align: center;
@@ -374,11 +369,20 @@ section{
     color: black;
 }
 
+#feedSection{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 900px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,39,0.7)), url(image/a03.jpg);
+    background-position: center;
+    background-size: cover;
+}
 
 #feedText{
     text-align: center;
     font-size: 55px;
-    color: red;
+    color: black;
     text-decoration: underline;
 }
 
@@ -388,6 +392,7 @@ section{
     margin-left: auto; 
     margin-right: auto;
     padding: 0;
+    
 
 }
 .feedColumn1{
@@ -397,48 +402,171 @@ section{
     height: 400px;
     width: 45%;
     float: left;
+    border-radius: 10px;
+  }
+.feedColumn1 p{
+    text-align: center;
+    margin-top: 290px;
+    color:white;
+}
+.feedColumn1:first-child{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,39,0.7)), url(image/einstein.jpg);
+}
+.feedColumn1:last-child{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,39,0.7)), url(image/oleksik.jpg);
 
 }
-.feedColumn1 img{
-    width:100%;
-    height: 100%;
-}
+
 .feedColumn2{
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
     padding: 0;
     width: 45%;
     height: 400px;
-
+    color: black;
     float:left;
     padding-top: 10px;
 }
-.feed:hover{
-    color: red;
-}
-
-footer{
-    clear:both;
-    height: 300px;
-    background-color: rgba(4,9,30,0.7);
-}
-.footer1{
-    float:left;
-    height: 200px;
-    width: 20%;
-    padding-left: 50px;
-    padding-top: 30px;
-}
-.footer1 img{
-    padding-left: 90px;
-    padding-top: 50px;
-}
-h1{
+.feedColumn2:hover{
     color: white;
 }
-footer p{
-    padding: 5px;
-    font-size: 20px;
+
+/* o nas */
+
+#aboutTitle{
+    width:100%;
+    font-size: 50px;
+    color: rgb(6, 165, 110);
+    text-align: center;
+    margin-top:20px;
+}
+#we{
+    height: 850px;
+    width: 80%;
+    margin:auto;
+ 
+}
+#we p{
+    font-size: 30px;
+    font-weight: 200px;
+    color: rgb(6, 165, 110);
+}
+#hr{
+    color: rgb(6, 165, 110);
+    width:100%;
+    height: 3px;
+    border-radius: 3px;
+}
+#member{
+    width:100%;
+    height: 150px;
+    margin:0;
+    padding:0;
+}
+#member p{
+    color:black;
+    font-size: 25px;
+    font-weight: 700;;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+#member h4{
+    color:black;
+    font-size: 17px;
+    font-weight: 600;;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+#member h5{
+    color:black;
+    font-size: 13px;
+    font-weight: 500;;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.photo{
+    width: 200px;
+    height: 250px; 
+    float: left;  
+}
+.photo img{
+    width:100%;
+    height:200px;
+}
+.shortInfo{
+    width:50%;
+    height: 100px;
+    float:left;
+    
+
+}
+.clear{
+    clear: left;
+}
+
+
+/*kontakt plus mapa*/
+.contact-section{
+    padding-top: 150px;
+}
+
+.contact-sectio h2{
+    font-size: 2em;
+}
+.container{
+    padding-top: 0px;
+}
+
+label{
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: .5em;
+
+}
+
+input, textarea{
+    width:60%;
+    padding:8px;
+    margin-bottom: 10px;
+    border-radius: .3em;
+    border: 2px solid rgba(128, 145, 116, 0.692);
+    box-sizing: border-box;
+    resize:none;
+}
+
+#tekst{
+    width:60%;
+    padding:8px;
+    margin-bottom: 3px;
+    height: 130px;
+    border-radius: 10px;
+    border: 2px solid rgba(128, 145, 116, 0.692);
+    box-sizing: border-box;
+    resize:none;
+    text-align: justify;
+}
+
+
+
+.send{
+    background-color: rgba(128, 145, 116, 0.692);
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 5em;
+    border-radius: 5em;
+    display: inline-block;
+    padding: 8px 20px;
+    width: unset;
+    cursor: pointer;
+}
+iframe{
+    width: 100%;
+    height: 400px;
+}
+
+.contact-left{
+    margin-left:30%;
 }
 
 
