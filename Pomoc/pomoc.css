@@ -37,6 +37,7 @@ nav{
     background-color: rgba(128, 145, 116, 0.692);
     box-shadow:10px 8px 8px gray;
     position: fixed;
+    z-index:99999;
 }
 nav a img{
     float: left;

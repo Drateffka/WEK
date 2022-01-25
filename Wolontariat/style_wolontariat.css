@@ -356,7 +356,7 @@ section{
 
 .column-up{
     flex-basis:100%;
-    background:rgb(64, 150, 142);
+    background:rgba(64, 150, 141, 0.568);
     border-radius:10px;
     margin-bottom:5%;
     padding:20px 12px;

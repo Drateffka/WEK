@@ -20,6 +20,7 @@ html{
     background-position: center;
     background-size: cover;
     position: relative;
+
 }
 a{
     text-decoration: none;
@@ -31,6 +32,7 @@ header{
     margin-left: 110px;
     margin: 0 auto;
     box-shadow:10px 8px 8px gray;
+    
 }
 nav{ 
     padding-top: 20px;
@@ -41,7 +43,7 @@ nav{
     width: 100%;
     background-color: rgba(128, 145, 116, 0.692);
     box-shadow:10px 8px 8px gray;
-
+    z-index:99999;
     position: fixed;
 }
 nav a img{
@@ -92,10 +94,9 @@ nav a img{
 
 .text-box p{
     margin: 10px 0 40px; 
-    font-size: 14px;
+    font-size: 20px;
     color:#fff;    
 }
-
 section{
     scroll-snap-align: center;
 }
