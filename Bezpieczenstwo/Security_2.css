@@ -15,7 +15,7 @@ html{
     background-position: center;
     background-size: cover;
     position: relative;
-    z-index:999999;
+    
 }
 a{
     text-decoration: none;
